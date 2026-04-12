@@ -9,15 +9,28 @@ const tajawal = Tajawal({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://your-project.vercel.app"),
+  metadataBase: new URL("https://alhabashi-marble.vercel.app"),
   title: {
     default: "مصنع الحبشي للرخام والجرانيت | فخامة الحجر العالمي في اليمن",
-    template: "%s | مصنع الحبشي للرخام والجرانيت"
+    template: "%s | مصنع الحبشي للرخام والجرانيت",
   },
-  description: "مصنع الحبشي للرخام والجرانيت: نختص باستيراد وتجهيز أرقى أنواع الرخام والجرانيت من إيطاليا، تركيا، والبرازيل. دقة في التنفيذ وفخامة تليق بمشاريعكم في اليمن.",
-  keywords: ["رخام", "جرانيت", "اليمن", "صنعاء", "مصنع الحبشي", "تصميم داخلي", "حجر طبيعي", "الحبشي للرخام والجرانيت"],
+  description:
+    "مصنع الحبشي للرخام والجرانيت: نختص باستيراد وتجهيز أرقى أنواع الرخام والجرانيت من إيطاليا، تركيا، والبرازيل. دقة في التنفيذ وفخامة تليق بمشاريعكم في اليمن.",
+  keywords: [
+    "رخام",
+    "جرانيت",
+    "اليمن",
+    "صنعاء",
+    "مصنع الحبشي",
+    "تصميم داخلي",
+    "حجر طبيعي",
+    "الحبشي للرخام والجرانيت",
+  ],
   alternates: {
     canonical: "/",
+  },
+  verification: {
+    google: "Kq9K3BFvUn5V7JPi9X4qJVF8cA6B4MRIKirV-b9Z0oI",
   },
   robots: {
     index: true,
@@ -25,15 +38,15 @@ export const metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   openGraph: {
     title: "مصنع الحبشي للرخام والجرانيت",
     description: "فخامة الحجر العالمي في قلب اليمن. أرقى أنواع الرخام والجرانيت المستورد.",
-    url: "https://your-project.vercel.app",
+    url: "https://alhabashi-marble.vercel.app",
     images: [{ url: "/images/logo.png" }],
     type: "website",
   },
@@ -55,9 +68,7 @@ export default function RootLayout({ children }) {
         />
         <JsonLd />
       </head>
-      <body className={tajawal.variable}>
-        {children}
-      </body>
+      <body className={tajawal.variable}>{children}</body>
     </html>
   );
 }
