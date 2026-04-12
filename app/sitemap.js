@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://your-project.vercel.app";
+  const baseUrl = "https://alhabashi-marble.vercel.app";
   
   return [
     {

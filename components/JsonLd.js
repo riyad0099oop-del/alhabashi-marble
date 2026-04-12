@@ -1,26 +1,29 @@
 "use client";
 
 export default function JsonLd() {
-  const baseUrl = "https://your-project.vercel.app";
+  const baseUrl = "https://alhabashi-marble.vercel.app";
   
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "HomeAndConstructionBusiness",
     "name": "مصنع الحبشي للرخام والجرانيت",
+    "alternateName": "Al Habashi Marble & Granite",
     "image": `${baseUrl}/images/logo.png`,
     "@id": `${baseUrl}`,
     "url": baseUrl,
     "telephone": "+967777079288",
+    "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Main Jadr Street, Amran Roundabout",
-      "addressLocality": "Sanaa",
+      "streetAddress": "شارع جدر الرئيسي، جولة عمران",
+      "addressLocality": "صنعاء",
+      "addressRegion": "Sanaa",
       "addressCountry": "YE"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 15.40,
-      "longitude": 44.20
+      "latitude": 15.4245,
+      "longitude": 44.1955
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -33,11 +36,11 @@ export default function JsonLd() {
         "Thursday"
       ],
       "opens": "08:00",
-      "closes": "18:00"
+      "closes": "20:00"
     },
     "sameAs": [
-      "#",
-      "#"
+      "https://www.facebook.com/alhabashimarble",
+      "https://www.instagram.com/alhabashimarble"
     ]
   };
 

@@ -1,35 +1,33 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import Showroom from "../components/Showroom";
+import Projects from "../components/Projects";
+import WhyUs from "../components/WhyUs";
+import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 import MotionWrapper from "../components/MotionWrapper";
-import dynamic from 'next/dynamic';
-
-const Showroom = dynamic(() => import("../components/Showroom"));
-const Projects = dynamic(() => import("../components/Projects"));
-const WhyUs = dynamic(() => import("../components/WhyUs"));
-const Footer = dynamic(() => import("../components/Footer"));
 
 export default function Home() {
   return (
     <main>
       <Navbar />
-      <MotionWrapper y={50}>
+      <MotionWrapper variant="scaleReveal">
         <Hero />
       </MotionWrapper>
 
-      <MotionWrapper delay={0.2}>
+      <MotionWrapper delay={0.1} variant="blurIn">
         <WhyUs />
       </MotionWrapper>
 
-      <MotionWrapper delay={0.3}>
+      <MotionWrapper delay={0.2} variant="fadeUp">
         <Showroom />
       </MotionWrapper>
 
-      <MotionWrapper delay={0.4}>
+      <MotionWrapper delay={0.3} variant="blurIn">
         <Projects />
       </MotionWrapper>
 
-      <MotionWrapper delay={0.5}>
+      <MotionWrapper delay={0.4} variant="fadeUp">
         <Footer />
       </MotionWrapper>
       

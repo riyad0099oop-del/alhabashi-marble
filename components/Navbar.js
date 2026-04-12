@@ -19,10 +19,11 @@ export default function Navbar() {
 
   const navLinks = [
     { title: "الرئيسية", id: "/#home" },
+    { title: "خدماتنا", id: "/services" },
     { title: "صالة العرض", id: "/#showroom" },
     { title: "مشاريعنا", id: "/projects" },
     { title: "دليل العناية", id: "/care-guide" },
-    { title: "اتصل بنا", id: "/#footer" },
+    { title: "اتصل بنا", id: "/contact" },
   ];
 
   return (

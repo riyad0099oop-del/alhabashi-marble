@@ -1,6 +1,8 @@
 import { Tajawal } from "next/font/google";
 import "./globals.css";
 import JsonLd from "../components/JsonLd";
+import SmoothScroll from "../components/SmoothScroll";
+import SitePreloader from "../components/SitePreloader";
 
 const tajawal = Tajawal({
   variable: "--font-tajawal",
@@ -11,20 +13,21 @@ const tajawal = Tajawal({
 export const metadata = {
   metadataBase: new URL("https://alhabashi-marble.vercel.app"),
   title: {
-    default: "مصنع الحبشي للرخام والجرانيت | فخامة الحجر العالمي في اليمن",
+    default: "مصنع الحبشي للرخام والجرانيت | أرقى أنواع الرخام والجرانيت في صنعاء، اليمن",
     template: "%s | مصنع الحبشي للرخام والجرانيت",
   },
   description:
-    "مصنع الحبشي للرخام والجرانيت: نختص باستيراد وتجهيز أرقى أنواع الرخام والجرانيت من إيطاليا، تركيا، والبرازيل. دقة في التنفيذ وفخامة تليق بمشاريعكم في اليمن.",
+    "مصنع الحبشي للرخام والجرانيت بصنعاء: متخصصون في استيراد وتجهيز أرقى أنواع الرخام الإيطالي، التركي والبرازيلي. تنفيذ احترافي وتصاميم فخمة لمشاريعكم في اليمن.",
   keywords: [
-    "رخام",
-    "جرانيت",
-    "اليمن",
-    "صنعاء",
-    "مصنع الحبشي",
-    "تصميم داخلي",
-    "حجر طبيعي",
+    "رخام اليمن",
+    "جرانيت صنعاء",
+    "مصنع رخام",
+    "تركيب رخام",
+    "رخام إيطالي",
+    "جرانيت مستورد",
     "الحبشي للرخام والجرانيت",
+    "تصميم داخلي صنعاء",
+    "واجهات حجر طبيعي",
   ],
   alternates: {
     canonical: "/",
@@ -44,17 +47,22 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "مصنع الحبشي للرخام والجرانيت",
-    description: "فخامة الحجر العالمي في قلب اليمن. أرقى أنواع الرخام والجرانيت المستورد.",
+    title: "مصنع الحبشي للرخام والجرانيت | فخامة الحجر العالمي",
+    description: "استيراد وتجهيز أرقى أنواع الرخام والجرانيت في اليمن بأحدث التقنيات العالمية.",
     url: "https://alhabashi-marble.vercel.app",
     images: [{ url: "/images/logo.png" }],
     type: "website",
+    locale: "ar_YE",
   },
   twitter: {
     card: "summary_large_image",
     title: "مصنع الحبشي للرخام والجرانيت",
-    description: "فخامة الحجر العالمي في قلب اليمن.",
+    description: "فخامة الحجر العالمي في قلب اليمن. رخام إيطالي وتركي وجرانيت برازيلي.",
     images: ["/images/logo.png"],
+  },
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
   },
 };
 
@@ -68,7 +76,12 @@ export default function RootLayout({ children }) {
         />
         <JsonLd />
       </head>
-      <body className={tajawal.variable}>{children}</body>
+      <body className={tajawal.variable}>
+        <SitePreloader />
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
+      </body>
     </html>
   );
 }

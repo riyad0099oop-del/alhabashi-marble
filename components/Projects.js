@@ -21,10 +21,11 @@ export default function Projects() {
                 </motion.div>
 
                 <div className="projects-bento-grid">
-                    {projectsData.slice(0, 3).map((project, index) => {
-                        // Creating a beautiful asymmetrical bento layout
-                        const isLarge = index === 0;
-                        const bentoClass = isLarge ? "bento-large" : "bento-wide";
+                    {projectsData.slice(0, 5).map((project, index) => {
+                        // Advanced Bento Logic
+                        let bentoClass = "bento-small";
+                        if (index === 0) bentoClass = "bento-large";
+                        if (index === 1 || index === 2) bentoClass = "bento-wide";
 
                         return (
                             <motion.div 
@@ -44,6 +45,10 @@ export default function Projects() {
                                         className="project-next-image"
                                     />
                                     <div className="project-mask"></div>
+                                    <div className="project-info-overlay">
+                                        <span className="project-type-tag">{project.type}</span>
+                                        <h3>{project.title}</h3>
+                                    </div>
                                 </div>
                             </motion.div>
                         );

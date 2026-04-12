@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://your-project.vercel.app/sitemap.xml',
+    sitemap: 'https://alhabashi-marble.vercel.app/sitemap.xml',
   }
 }

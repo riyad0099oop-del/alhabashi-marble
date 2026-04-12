@@ -15,7 +15,7 @@ export default function WhyUs() {
                 <span className="badge-expert">الاحترافية في التفاصيل</span>
                 <h2 className="title-expert">لماذا يختارنا الخبراء؟</h2>
                 <p className="subtitle-expert">
-                    صياغة قصص الفخامة والجمال بأسلوب أكاديمي رفيع يجمع بين أصالة الحجر ودقة المعمار.
+                    صياغة قصص الفخامة والجمال بأسلوب فني رفيع يجمع بين أصالة الحجر ودقة المعمار.
                 </p>
             </motion.div>
 

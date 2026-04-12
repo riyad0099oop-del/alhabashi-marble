@@ -76,14 +76,13 @@ export default function ProjectsPage() {
                         <motion.div 
                             layout
                             key={project.id}
-                            initial={{ opacity: 0, y: 40, scale: 0.95 }}
-                            animate={{ opacity: 1, y: 0, scale: 1 }}
-                            exit={{ opacity: 0, scale: 0.95 }}
-                            transition={{ duration: 0.5, ease: "easeOut" }}
-                            className="project-card-gallery"
+                            initial={{ opacity: 0, scale: 0.9, y: 30 }}
+                            animate={{ opacity: 1, scale: 1, y: 0 }}
+                            exit={{ opacity: 0, scale: 0.9 }}
+                            transition={{ duration: 0.5 }}
+                            className="project-card-premium"
                         >
                             <div className="project-img-inner">
-                                {/* The background color of .project-card-gallery handles the placeholder look while loading */}
                                 <Image 
                                     src={project.image} 
                                     alt={project.title} 
@@ -93,6 +92,10 @@ export default function ProjectsPage() {
                                     className="project-next-image"
                                 />
                                 <div className="project-mask"></div>
+                                <div className="project-info-overlay">
+                                    <span className="project-type-tag">{project.type}</span>
+                                    <h3>{project.title}</h3>
+                                </div>
                             </div>
                         </motion.div>
                     ))}

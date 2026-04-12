@@ -42,15 +42,15 @@ export default function Footer() {
                     <ul className="footer-contact-info">
                         <li>
                             <i className="fas fa-map-marker-alt"></i> 
-                            <span>صنعاء - جولة عمران<br/>خط جدر الرئيسي</span>
+                            <span>صنعاء - اليمن</span>
                         </li>
                         <li>
                             <i className="fas fa-phone-alt"></i> 
-                            <span>+967 777 079 288</span>
+                            <span>المدير التنفيذي: 777079288</span>
                         </li>
                         <li>
-                            <i className="fas fa-envelope"></i> 
-                            <span>sales@alhabashi.com</span>
+                            <i className="fas fa-headset"></i> 
+                            <span>المبيعات: 777713545</span>
                         </li>
                     </ul>
                 </div>
@@ -72,8 +72,14 @@ export default function Footer() {
             </div>
 
             {/* Bottom Bar */}
-            <div className="footer-bottom-bar">
-                <span>تم التصميم بكل حب &copy; {new Date().getFullYear()} - مصنع الحبشي للرخام والجرانيت</span>
+            <div className="footer-bottom-bar" style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '30px 0' }}>
+                <span style={{ opacity: 0.9 }}>&copy; {new Date().getFullYear()} جميع الحقوق محفوظة - مصنع الحبشي للرخام والجرانيت</span>
+                <a href="https://wa.me/967774303491" target="_blank" rel="noopener noreferrer" className="dev-signature">
+                    تصميم وتطوير: <span style={{ color: 'var(--accent-gold)', fontWeight: '700' }}>Riyad & Emad</span> 
+                    <span style={{ margin: '0 8px', opacity: 0.5 }}>|</span>
+                    <i className="fab fa-whatsapp" style={{ fontSize: '12px', marginLeft: '5px' }}></i>
+                    774303491
+                </a>
                 
                 <button onClick={scrollToTop} className="back-to-top" aria-label="العودة للأعلى">
                     <i className="fas fa-arrow-up"></i>
