@@ -22,7 +22,7 @@ export default function ContactPage() {
     e.preventDefault();
     
     // Construct WhatsApp Message
-    const message = `السلام عليكم، أود طلب استشارة VIP مع خبراء مصنع الحبشي.\n\nالاسم: ${formData.name}\nرقم الهاتف: ${formData.phone}\nنوع المشروع: ${formData.projectType}\n\nأتطلع للتواصل معكم لتنسيق الموعد.`;
+    const message = `السلام عليكم، أود طلب استشارة VIP مع خبراء الحبشي.\n\nالاسم: ${formData.name}\nرقم الهاتف: ${formData.phone}\nنوع المشروع: ${formData.projectType}\n\nأتطلع للتواصل معكم لتنسيق الموعد.`;
     
     const waUrl = `https://wa.me/967777079288?text=${encodeURIComponent(message)}`;
     
@@ -42,7 +42,7 @@ export default function ContactPage() {
             <span className="badge-premium-large">تواصل معنا</span>
             <h1>نحن هنا لتنفيذ رؤيتكم</h1>
             <p>
-              سواء كنت تخطط لمشروع قادم أو تحتاج لاستشارة فنية، خبراء الحبشي جاهزون لمساعدتك.
+              سواء كنت تخطط لمشروع قادم أو تحتاج لاستشارة فنية، فإن خبراء الحبشي للرخام والجرانيت مستعدون لتحويل رؤيتك إلى واقع ملموس.
             </p>
           </MotionWrapper>
         </div>

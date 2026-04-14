@@ -6,7 +6,7 @@ export default function JsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
-    "name": "مصنع الحبشي للرخام والجرانيت",
+    "name": "الحبشي للرخام والجرانيت",
     "alternateName": "Al Habashi Marble & Granite",
     "image": `${baseUrl}/images/logo.png`,
     "@id": `${baseUrl}`,

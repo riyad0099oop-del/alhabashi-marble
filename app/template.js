@@ -17,7 +17,7 @@ export default function Template({ children }) {
                     <div className="preloader-logo">
                         <Image 
                             src="/images/logo.png" 
-                            alt="مصنع الحبشي" 
+                            alt="الحبشي للرخام والجرانيت" 
                             width={80} 
                             height={80} 
                             unoptimized 
@@ -25,8 +25,8 @@ export default function Template({ children }) {
                         />
                     </div>
                     <div className="preloader-title">
-                        <span className="char">مصنع</span>
                         <span className="char">الحبشي</span>
+                        <span className="char">للرخام والجرانيت</span>
                     </div>
                 </div>
             </motion.div>

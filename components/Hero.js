@@ -43,13 +43,13 @@ export default function Hero() {
         </motion.div>
         
         <motion.h1 variants={itemVariants}>
-          <span className="brand-h1-main">مصنع الحبشي للرخام والجرانيت</span> <br />
+          <span className="brand-h1-main">الحبشي للرخام والجرانيت</span> <br />
           <span className="brand-highlight">أرقى أنواع الرخام والجرانيت في صنعاء، اليمن</span>
         </motion.h1>
         
         <motion.p variants={itemVariants} className="hero-desc-glass">
-          نحن في مصنع الحبشي نقدم لكم أفخر أنواع الرخام والجرانيت المستورد (إيطالي، تركي، برازيلي) 
-          بأعلى معايير الدقة والاحترافية لتصاميم تليق بفخامة منازلكم ومشاريعكم في اليمن.
+          نلتزم في الحبشي للرخام والجرانيت بتقديم أفخر أنواع الحجر الطبيعي المستورد (إيطالي، تركي، برازيلي) 
+          بأعلى معايير الدقة، لنصيغ لكم تصاميم تليق بفخامة منازلكم ومشاريعكم في اليمن.
         </motion.p>
         
         <motion.div variants={itemVariants} className="hero-actions">

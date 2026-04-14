@@ -14,9 +14,9 @@ export default function Footer() {
                 <div className="footer-brand-info">
                     <a href="#" className="footer-logo-premium">
                         <Image src="/images/logo.png" alt="Al Habashi" width={55} height={55} unoptimized />
-                        <h3>مصنع الحبشي</h3>
+                        <h3>الحبشي للرخام والجرانيت</h3>
                     </a>
-                    <p>الرائد الأول في اليمن لاستيراد وتجهيز الرخام والجرانيت العالمي منذ أكثر من عقدين من الزمان. جودتنا سر بقائنا.</p>
+                    <p>نفتخر في الحبشي للرخام والجرانيت بكوننا الوجهة الأولى في اليمن لاستيراد وتجهيز أرقى أنواع الحجر الطبيعي العالمي منذ أكثر من عقدين. جودتنا دائماً هي سر ثقتكم بمنتجاتنا.</p>
                     <div className="social-links-premium">
                         <a href="#"><i className="fab fa-facebook-f"></i></a>
                         <a href="#"><i className="fab fa-instagram"></i></a>
@@ -73,7 +73,7 @@ export default function Footer() {
 
             {/* Bottom Bar */}
             <div className="footer-bottom-bar" style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '30px 0' }}>
-                <span style={{ opacity: 0.9 }}>&copy; {new Date().getFullYear()} جميع الحقوق محفوظة - مصنع الحبشي للرخام والجرانيت</span>
+                <span style={{ opacity: 0.9 }}>&copy; {new Date().getFullYear()} جميع الحقوق محفوظة - الحبشي للرخام والجرانيت</span>
                 <a href="https://wa.me/967774303491" target="_blank" rel="noopener noreferrer" className="dev-signature">
                     تصميم وتطوير: <span style={{ color: 'var(--accent-gold)', fontWeight: '700' }}>Riyad & Emad</span> 
                     <span style={{ margin: '0 8px', opacity: 0.5 }}>|</span>

@@ -38,7 +38,7 @@ export default function Navbar() {
             unoptimized
             className="brand-logo-img"
           />
-          <span className="brand-text">مصنع الحبشي</span>
+          <span className="brand-text">الحبشي للرخام والجرانيت</span>
         </Link>
         
         {/* Desktop Nav */}
