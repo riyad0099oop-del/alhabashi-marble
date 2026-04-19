@@ -691,6 +691,10 @@
     .process-grid { grid-template-columns: 1fr 1fr; }
 }
 
+@media (max-width: 1200px) {
+    .services-grid-luxury { grid-template-columns: 1fr 1fr; }
+}
+
 @media (max-width: 768px) {
     .golden-rule-card { padding: 40px 20px; }
     .services-grid-luxury { grid-template-columns: 1fr; padding: 40px 5%; }
@@ -704,6 +708,3 @@
     .pill-item { flex-direction: column; text-align: center; gap: 10px; }
 }
 
-@media (max-width: 1200px) {
-    .services-grid-luxury { grid-template-columns: 1fr 1fr; }
-}

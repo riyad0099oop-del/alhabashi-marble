@@ -35,7 +35,7 @@ export default function AdminLayout({ children, locale }) {
       {/* Sidebar Overlay for Mobile */}
       <AnimatePresence>
         {isSidebarOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -61,23 +61,23 @@ export default function AdminLayout({ children, locale }) {
           {navItems.map((item) => {
             const isActive = pathname === `/${pathname.split('/')[1]}${item.href}`;
             return (
-              <Link 
-                key={item.href} 
-                href={item.href} 
+              <Link
+                key={item.href}
+                href={item.href}
                 className={`nav-item ${isActive ? 'active' : ''}`}
               >
                 <i className={item.icon}></i>
                 <span>{item.label}</span>
                 {isActive && (
-                  <motion.div 
-                    layoutId="active-nav" 
-                    className="active-indicator" 
+                  <motion.div
+                    layoutId="active-nav"
+                    className="active-indicator"
                   />
                 )}
               </Link>
             );
           })}
-          
+
           <button onClick={handleLogout} className="nav-item logout-btn" style={{ marginTop: 'auto', border: 'none', background: 'none', cursor: 'pointer', width: '100%', textAlign: 'inherit' }}>
             <i className="fas fa-sign-out-alt"></i>
             <span>{isRtl ? "تسجيل الخروج" : "Logout"}</span>
@@ -100,7 +100,7 @@ export default function AdminLayout({ children, locale }) {
               <i className="fas fa-bars"></i>
             </button>
             <div className="page-info">
-               <h1>{isRtl ? "لوحة التحكم" : "Dashboard"}</h1>
+              <h1>{isRtl ? "لوحة التحكم" : "Dashboard"}</h1>
             </div>
           </div>
           <div className="admin-profile">
