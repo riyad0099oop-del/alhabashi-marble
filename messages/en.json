@@ -1,0 +1,273 @@
+{
+  "Projects": {
+    "badge": "Portfolio of Excellence",
+    "title": "Creations Crafted to Last",
+    "subtitle": "We don’t just sell marble; we craft masterpieces that adorn your home and endure for generations.",
+    "exploreMore": "Explore All Projects",
+    "filters": {
+      "all": "All Masterpieces",
+      "floors": "Halls & Floors",
+      "stairs": "Royal Stairs",
+      "kitchens": "Kitchens & Sinks"
+    },
+    "items": {
+      "1": { "title": "Luxury Geometric Floor Design", "cat": "Professional marble blend with 3D coordination" },
+      "2": { "title": "Wide Hall Flooring", "cat": "Pure white marble with geometric dark frames" },
+      "3": { "title": "Elegant Black Marble Entrances", "cat": "Hallway coordination with luxury longitudinal inserts" },
+      "31": { "title": "Curved Palace Corridors", "cat": "Symmetrical marble floors and walls with a grand curved design" },
+      "32": { "title": "Open Halls Under Construction", "cat": "Distinctive marble detailing in a checkerboard pattern mix" },
+      "4": { "title": "Royal Spiral Staircase", "cat": "Implementation and preparation of grand spiral stairs" },
+      "5": { "title": "Private Villa Stairs", "cat": "Staircases with intricate details for villas and homes" },
+      "6": { "title": "Modern Granite Stairs", "cat": "The strength and durability of granite in staircase applications" },
+      "61": { "title": "Handrails & Railings", "cat": "Design and execution of marble staircase accessories" },
+      "62": { "title": "Natural Marble Details", "cat": "Highlighting marble veining in staircase steps" },
+      "7": { "title": "Royal Black Granite Kitchen", "cat": "Granite kitchen islands with diamond white embroidery" },
+      "8": { "title": "Grey Granite Sinks", "cat": "Durable sinks with a modern stain-resistant design" },
+      "9": { "title": "Integrated Kitchen Islands", "cat": "Grey granite kitchen island design with built-in shelves" },
+      "91": { "title": "Modern Hall Sinks", "cat": "Expertly integrated circular marble sink" },
+      "92": { "title": "Luxury Brown Marble Kitchens", "cat": "Dark brown marble kitchen countertops for a warm touch" }
+    }
+  },
+  "Services": {
+    "badge": "Modern Luxury",
+    "title": "Our Exclusive Expertise",
+    "desc": "Between the authenticity of the earth and the precision of technology, we craft a world of marble and granite that redefines architectural luxury.",
+    "list": {
+      "0": {
+        "title": "Global Marble & Granite Supply",
+        "desc": "Your bridge to the world's finest stone quarries. We import our premium materials directly from Italy, Turkey, and Brazil, rigorously inspecting quality before shipping to ensure perfection and vein consistency.",
+        "features": {
+          "0": "Finest Italian Carrara",
+          "1": "Ultra-durable Brazilian Granite",
+          "2": "Turkish Marble with Modern Touches"
+        }
+      },
+      "1": {
+        "title": "Architectural Cutting & Shaping",
+        "desc": "We transform massive stone blocks into artistic pieces with laser precision. Utilizing state-of-the-art technology to ensure perfect Bookmatching and execute the most intricate architectural details for staircases, counters, and vanities.",
+        "features": {
+          "0": "Ultra-precise Laser Cutting",
+          "1": "Professional Vein Matching",
+          "2": "Manual & Automated Edge Profiling"
+        }
+      },
+      "2": {
+        "title": "Artistic Installation & Italian Polishing",
+        "desc": "Our work doesn't end at delivery; it begins at your site. Our team adheres to the highest engineering standards of installation, utilizing premium Italian materials to polish marble until it becomes mirror-like.",
+        "features": {
+          "0": "Mechanical & Traditional Installation",
+          "1": "Long-lasting Crystal Polishing",
+          "2": "Stain Protection & Isolation"
+        }
+      },
+      "3": {
+        "title": "Facade & Ornament Sculpting",
+        "desc": "We forge a unique identity for your buildings by sculpting ornamental facades, capitals, and columns. Merging the natural durability of stone with the elegance of classical and modern architectural design.",
+        "features": {
+          "0": "Capitals & Columns Sculpting",
+          "1": "Palace & Villa Facades",
+          "2": "Carved Interior Ornaments"
+        }
+      }
+    },
+    "process": {
+      "badge": "From Quarry to Palace",
+      "title": "Unrivaled Precision at Every Stage",
+      "steps": {
+        "0": "Raw Material Selection",
+        "1": "Precision Cutting",
+        "2": "Superior Polishing",
+        "3": "Artistic Installation"
+      }
+    },
+    "cta": {
+      "badge": "Your First Step Towards Excellence",
+      "title": "Begin The Journey of Luxury Now",
+      "desc": "Our team is ready to transform your architectural aspirations into a tangible reality of marble and granite.",
+      "button": "Request Your Complimentary Consultation"
+    }
+  },
+  "Showroom": {
+    "title": "Natural Stone Showroom",
+    "filter": {
+      "all": "All Collections",
+      "marble": "Elite Marble",
+      "granite": "Premium Granite"
+    },
+    "products": {
+      "calacatta": "Italian Calacatta",
+      "traventino": "Classic Traventino",
+      "blackGalaxy": "Black Galaxy",
+      "cremaMarfil": "Crema Marfil"
+    },
+    "origins": {
+      "italy": "Italy",
+      "turkey": "Turkey",
+      "india": "India",
+      "spain": "Spain"
+    },
+    "labels": {
+      "inquire": "Inquire Now",
+      "requestQuote": "Request a Quote via WhatsApp",
+      "waMessage": "Hello, I am interested in: "
+    },
+    "details": {
+      "desc": "This variety is distinguished by its exquisite veining and superior quality, making it the perfect choice for luxury facades, kitchens, and flooring.",
+      "features": [
+        "Scratch and heat resistant",
+        "Natural long-lasting shine",
+        "Available in various sizes"
+      ]
+    }
+  },
+  "Home": {
+    "Hero": {
+      "badge": "The Pinnacle of Craftsmanship",
+      "title": "Crafting the Future of Natural Stone",
+      "desc": "Between the heritage of Italian mountains and the precision of modern engineering, we sculpt stories of luxury and permanence for the world's most distinguished projects."
+    },
+    "WhyUs": {
+      "badge": "Why Al Habashi",
+      "title": "Leaders in Stone Engineering",
+      "desc": "Combining global sourcing with local expertise to deliver unmatched quality in every slab.",
+      "cards": [
+        {
+          "title": "Global Sourcing",
+          "desc": "Direct partnerships with the most elite quarries in Italy, Turkey, and Brazil."
+        },
+        {
+          "title": "Precision Cutting",
+          "desc": "Advanced CNC and laser technology for zero-defect architectural shaping."
+        },
+        {
+          "title": "Legacy of Quality",
+          "desc": "Decades of experience serving the Middle East's most prestigious architectural landmarks."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "Your First Step Towards Excellence",
+      "title": "Begin The Journey of Luxury Now",
+      "desc": "Our team is ready to transform your architectural aspirations into a tangible reality of marble and granite.",
+      "button": "Request Your Complimentary Consultation"
+    }
+  },
+  "Navbar": {
+    "brand": "Al Habashi Marble & Granite",
+    "home": "Home",
+    "services": "Expertise",
+    "showroom": "Showroom",
+    "projects": "Portfolio",
+    "careGuide": "Care Guide",
+    "contact": "Inquiries",
+    "getQuote": "Get a Quote",
+    "lang": "العربية"
+  },
+  "Footer": {
+    "about": "At Al Habashi Marble & Granite, we take pride in being Yemen's premier destination for importing and processing the world's most exquisite natural stones for over two decades. Our quality is the foundation of your trust.",
+    "links": {
+      "title": "Quick Links",
+      "home": "Home",
+      "showroom": "Showroom",
+      "projects": "Portfolio",
+      "careGuide": "Care Guide",
+      "admin": "Management"
+    },
+    "contact": {
+      "title": "Connect With Us",
+      "location": "Sana'a - Yemen",
+      "ceo": "CEO: 777079288",
+      "sales": "Sales: 777713545"
+    },
+    "map": "Our Location",
+    "rights": "All Rights Reserved - Al Habashi Marble & Granite",
+    "dev": "Design & Development:"
+  },
+  "Contact": {
+    "badge": "Inquiries",
+    "title": "We Are Here to Realize Your Vision",
+    "desc": "Whether planning an upcoming project or seeking technical advice, Al Habashi's experts are ready to turn your vision into a tangible masterpiece.",
+    "cards": {
+      "ceo": "CEO",
+      "sales": "Sales Team",
+      "directCall": "Direct Call",
+      "inquiries": "Sales Inquiries"
+    },
+    "form": {
+      "title": "Reserve Your Place in the Elite Circle",
+      "subtitle": "One of our consultants will reach out to discuss your project details and ensure the highest execution standards.",
+      "nameLabel": "May we have the honor of knowing your name?",
+      "namePlace": "Full Name",
+      "phoneLabel": "How can our experts reach you?",
+      "phonePlace": "Phone Number",
+      "typeLabel": "What is the nature of your project?",
+      "types": {
+        "palaces": "Palaces",
+        "villas": "Luxury Villas",
+        "hotels": "Hotels",
+        "towers": "Residential Towers",
+        "commercial": "Restaurants & Cafes",
+        "other": "Other"
+      },
+      "submit": "Schedule Your Consultation",
+      "noteprefix": "You will be redirected to WhatsApp to connect with the",
+      "notesuffix": "Manager",
+      "waMessagePrefix": "Hello, I would like to coordinate for a new project:",
+      "waMessageSuffix": "Please let me know the suitable time for discussion. Thank you."
+    },
+    "info": {
+      "location": "Main Location",
+      "locationValue": "Sana'a - Yemen",
+      "hours": "Working Hours",
+      "days": "Saturday - Thursday: 8AM - 8PM",
+      "friday": "Friday: Official Holiday"
+    }
+  },
+  "CareGuide": {
+    "badge": "After-Sales Support",
+    "title": "Marble & Stone Care Guide",
+    "desc": "Because we craft masterpieces meant to last generations, we've designed this guide to help you maintain the brilliance of your home's marble and stone with simple and effective methods.",
+    "cleaning": {
+      "title": "Cleaning Tips for Maintaining Brilliance",
+      "daily": {
+        "title": "Daily Maintenance",
+        "text": "Use a soft (microfiber) cloth dampened with warm water to wipe dust instead of harsh brooms that can cause micro-scratches and dull the shine."
+      },
+      "soap": {
+        "title": "Choosing the Right Soap",
+        "text": "Rely on neutral soap (pH 7) specifically for natural marble. Avoid using abrasive sponges or metal scouring pads to preserve the smooth surface."
+      },
+      "drying": {
+        "title": "Immediate Drying",
+        "text": "Water left on marble for long periods can leave white lime stains. Always ensure the surface is dried immediately after wet wiping with a cotton cloth."
+      }
+    },
+    "stains": {
+      "title": "Professional Stain Management",
+      "desc": "High-traffic areas like kitchens or counters are constantly exposed to spills. Success lies in response time and the correct treatment steps:",
+      "response": {
+        "title": "Response Time",
+        "text": "Wipe spills immediately (especially in kitchens and work counters) by blotting and absorbing rather than rubbing, to prevent the stain from spreading."
+      },
+      "coffee": {
+        "title": "Tea & Coffee Stains",
+        "text": "Use a mild solution of hydrogen peroxide with a few drops of ammonia (extreme caution for light marble only) and rinse with pure water quickly."
+      },
+      "oil": {
+        "title": "Deep Oil Stains",
+        "text": "For kitchen oils, create a poultice of baking soda and water, apply to the stain and cover with plastic wrap for 24 hours to draw the oil from the stone."
+      }
+    },
+    "goldenRule": {
+      "title": "The Golden Rule",
+      "text": "Marble and natural stone primarily consist of calcium carbonate, making them highly reactive and sensitive to acids. To protect your investment in luxury marble, the following materials are strictly prohibited:",
+      "list": [
+        "Vinegar and Lemon",
+        "Standard Glass Cleaners",
+        "Direct Bleach (Chlorine)",
+        "Flash and Potent Bathroom Acids",
+        "Any harsh chemical cleaners"
+      ]
+    }
+  }
+}

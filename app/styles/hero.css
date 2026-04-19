@@ -1,0 +1,257 @@
+/* =========================================
+   الواجهة الرئيسية (Hero Cinematic Premium)
+   ========================================= */
+.hero-cinematic {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    background: #1a100a;
+}
+
+.hero-bg-cinematic {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.hero-image-zoom {
+    position: absolute;
+    inset: 0;
+    /* FIX #4 — replaced Unsplash with local project image */
+    background: url('/images/projects/floors/floor-3.jpg') center/cover no-repeat;
+    animation: luxuriousZoom 35s infinite alternate ease-in-out;
+}
+
+@keyframes luxuriousZoom {
+    0% { transform: scale(1) translateY(0); filter: brightness(1); }
+    100% { transform: scale(1.15) translateY(-2%); filter: brightness(0.85); }
+}
+
+.hero-dark-veil {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(26, 16, 10, 0.4) 0%,
+        rgba(45, 27, 18, 0.6) 60%,
+        rgba(45, 27, 18, 0.95) 100%
+    );
+    z-index: 2;
+}
+
+.hero-content-cinematic {
+    position: relative;
+    z-index: 10;
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.hero-badge-glass {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(217, 164, 125, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 8px 25px;
+    border-radius: 50px;
+    color: var(--accent-gold);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero-badge-glass i {
+    font-size: 0.8rem;
+    animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+    0% { opacity: 0.5; text-shadow: 0 0 0 transparent; }
+    50% { opacity: 1; text-shadow: 0 0 10px var(--accent-gold); }
+    100% { opacity: 0.5; text-shadow: 0 0 0 transparent; }
+}
+
+.hero-cinematic h1 {
+    font-size: clamp(3.5rem, 8vw, 6.5rem);
+    line-height: 1.1;
+    font-weight: 200;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    letter-spacing: -1px;
+}
+
+.brand-h1-main {
+    font-weight: 200;
+}
+
+.brand-highlight {
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent-gold) 0%, var(--white) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.hero-desc-glass {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 650px;
+    margin: 0 auto 50px;
+    line-height: 1.9;
+    font-weight: 500;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-solid-gold {
+    background: linear-gradient(135deg, var(--accent-gold) 0%, #bd8c61 100%);
+    color: white;
+    text-decoration: none;
+    padding: 18px 45px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 15px 30px rgba(217, 164, 125, 0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.btn-solid-gold:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(217, 164, 125, 0.4);
+    background: var(--white);
+    color: var(--primary-brown);
+}
+
+.btn-glass-outline {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    color: white;
+    text-decoration: none;
+    padding: 18px 45px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-glass-outline:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: white;
+    transform: translateY(-5px);
+}
+
+/* Glass Stats Bar */
+.hero-glass-stats {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background: rgba(45, 27, 18, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(217, 164, 125, 0.2);
+    padding: 20px 60px;
+    border-radius: 100px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.stat-num {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--accent-gold);
+}
+
+.stat-text {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 30px;
+    background: rgba(255,255,255,0.1);
+    margin: auto 0;
+}
+
+/* FIX #9 — Scroll Indicator RTL-compatible using logical properties */
+.scroll-indicator-container {
+    position: absolute;
+    bottom: 0;
+    inset-inline-start: 50px; /* RTL-safe: right in Arabic, left in English */
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+.scroll-line {
+    width: 1px;
+    height: 100px;
+    background: rgba(255,255,255,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-dot {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 3px;
+    height: 20px;
+    background: var(--accent-gold);
+    animation: scrollDown 2s infinite cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@keyframes scrollDown {
+    0% { top: -20px; opacity: 1; }
+    100% { top: 100px; opacity: 0; }
+}
+
+@media (max-width: 1024px) {
+    .hero-glass-stats { bottom: 30px; padding: 15px 40px; gap: 30px; }
+    .scroll-indicator-container { display: none; }
+}
+
+@media (max-width: 768px) {
+    .hero-cinematic { height: auto; min-height: 100vh; padding-top: 140px; padding-bottom: 80px; }
+    .hero-content-cinematic { margin-top: 0; }
+    .hero-cinematic h1 { font-size: 2.5rem; margin-bottom: 20px; }
+    .hero-desc-glass { font-size: 1.1rem; margin-bottom: 35px; }
+    .hero-actions { flex-direction: column; width: 100%; max-width: 300px; margin: 0 auto; gap: 15px; }
+    .hero-glass-stats { display: none; }
+}

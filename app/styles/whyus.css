@@ -1,0 +1,199 @@
+/* =========================================
+   قسم لماذا يختارنا الخبراء (Why Us - Premium)
+   ========================================= */
+.why-us-premium {
+    padding: 120px 5%;
+    background: radial-gradient(circle at top, var(--white) 0%, var(--bg-light) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.why-us-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.why-us-header .badge-expert {
+    color: var(--accent-gold);
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background: rgba(217, 164, 125, 0.08);
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(217, 164, 125, 0.2);
+}
+
+.why-us-header .title-expert {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--primary-brown);
+    font-weight: 950;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.why-us-header .subtitle-expert {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    line-height: 1.9;
+    font-weight: 600;
+}
+
+/* Editorial Grid */
+.editorial-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* FIX #12 — min-height instead of fixed height */
+.editorial-card {
+    background: var(--white);
+    border-radius: 24px;
+    padding: 60px 40px;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(217, 164, 125, 0.12);
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 10px 40px rgba(78, 46, 30, 0.02);
+    z-index: 1;
+    overflow: hidden;
+    min-height: 420px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.editorial-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, rgba(217, 164, 125, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: 0.8s ease;
+    z-index: -1;
+}
+
+.editorial-card:hover {
+    transform: translateY(-25px) scale(1.05);
+    box-shadow: 0 50px 100px rgba(78, 46, 30, 0.15), 0 0 40px rgba(217, 164, 125, 0.3);
+    border-color: var(--accent-gold);
+    border-width: 2px;
+    background: var(--white);
+}
+
+.editorial-card:hover::before {
+    opacity: 1;
+}
+
+/* FIX #12 — min-height instead of fixed height for center card */
+.editorial-card.center-card {
+    min-height: 480px;
+    height: auto;
+    box-shadow: 0 20px 50px rgba(78, 46, 30, 0.05);
+    z-index: 2;
+    background: var(--white);
+    border-color: rgba(217, 164, 125, 0.2);
+}
+
+.editorial-card.center-card:hover {
+    transform: translateY(-30px) scale(1.05);
+    box-shadow: 0 60px 120px rgba(78, 46, 30, 0.2), 0 0 50px rgba(217, 164, 125, 0.4);
+    border-color: var(--accent-gold);
+}
+
+.editorial-icon {
+    font-size: 3.5rem;
+    color: var(--accent-gold);
+    margin-bottom: 30px;
+    transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-card:hover .editorial-icon {
+    transform: scale(1.2) rotate(10deg);
+    color: var(--primary-brown);
+    filter: drop-shadow(0 15px 25px rgba(217, 164, 125, 0.4));
+}
+
+.editorial-card h3 {
+    font-size: 1.8rem;
+    color: var(--primary-brown);
+    margin-bottom: 20px;
+    font-weight: 800;
+    transition: 0.4s ease;
+}
+
+.editorial-card:hover h3 {
+    color: var(--primary-brown);
+    letter-spacing: 1px;
+    transform: scale(1.05);
+}
+
+.editorial-card p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    transition: 0.4s ease;
+}
+
+.title-expert {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--primary-brown);
+    font-weight: 950;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.subtitle-expert {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    line-height: 1.9;
+    font-weight: 600;
+}
+
+.badge-expert {
+    color: var(--accent-gold);
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background: rgba(217, 164, 125, 0.08);
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(217, 164, 125, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .editorial-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .editorial-card.center-card {
+        min-height: 420px;
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .editorial-features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .editorial-card.center-card {
+        grid-column: span 1;
+    }
+    .editorial-card, .editorial-card.center-card {
+        min-height: unset;
+        height: auto;
+        padding: 50px 30px;
+    }
+}

@@ -1,5 +1,3 @@
-"use client";
-
 export default function JsonLd() {
   const baseUrl = "https://alhabashi-marble.vercel.app";
   
@@ -22,8 +20,8 @@ export default function JsonLd() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 15.4245,
-      "longitude": 44.1955
+      "latitude": 15.4418282,
+      "longitude": 44.171003
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",

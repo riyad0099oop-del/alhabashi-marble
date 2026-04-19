@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link } from "../i18n/routing";
+import { useTranslations } from "next-intl";
 
 // Animation Variants
 const containerVariants = {
@@ -22,6 +23,9 @@ const itemVariants = {
 };
 
 export default function Hero() {
+  const t = useTranslations("Home.Hero");
+  const nt = useTranslations("Navbar");
+
   return (
     <section id="home" className="hero-cinematic">
       {/* Background Layers */}
@@ -39,25 +43,24 @@ export default function Hero() {
       >
         <motion.div variants={itemVariants} className="hero-badge-glass">
             <i className="fas fa-gem"></i>
-            فخامة الحجر الطبيعي العالمي
+            {t("badge")}
         </motion.div>
         
         <motion.h1 variants={itemVariants}>
-          <span className="brand-h1-main">الحبشي للرخام والجرانيت</span> <br />
-          <span className="brand-highlight">أرقى أنواع الرخام والجرانيت في صنعاء، اليمن</span>
+          <span className="brand-h1-main">{nt("brand")}</span> <br />
+          <span className="brand-highlight">{t("title")}</span>
         </motion.h1>
         
         <motion.p variants={itemVariants} className="hero-desc-glass">
-          نلتزم في الحبشي للرخام والجرانيت بتقديم أفخر أنواع الحجر الطبيعي المستورد (إيطالي، تركي، برازيلي) 
-          بأعلى معايير الدقة، لنصيغ لكم تصاميم تليق بفخامة منازلكم ومشاريعكم في اليمن.
+          {t("desc")}
         </motion.p>
         
         <motion.div variants={itemVariants} className="hero-actions">
           <a href="https://wa.me/967777079288" className="btn-solid-gold" target="_blank" rel="noopener noreferrer">
-            تواصل معنا مباشرة
+            {nt("contact")}
           </a>
           <Link href="/projects" className="btn-glass-outline">
-            استكشف مشاريعنا
+            {nt("projects")}
           </Link>
         </motion.div>
       </motion.div>

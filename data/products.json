@@ -1,0 +1,30 @@
+[
+    { 
+        "id": 1,
+        "key": "calacatta", 
+        "originKey": "italy", 
+        "category": "marble",
+        "img": "https://images.unsplash.com/photo-1615529328331-f8917597711f?q=80&w=500" 
+    },
+    { 
+        "id": 2,
+        "key": "traventino", 
+        "originKey": "turkey", 
+        "category": "marble",
+        "img": "https://images.unsplash.com/photo-1590374585152-ca0e8194c0d6?q=80&w=500" 
+    },
+    { 
+        "id": 3,
+        "key": "blackGalaxy", 
+        "originKey": "india", 
+        "category": "granite",
+        "img": "https://images.unsplash.com/photo-1599619351208-3e5c8395d824?q=80&w=500" 
+    },
+    { 
+        "id": 4,
+        "key": "cremaMarfil", 
+        "originKey": "spain", 
+        "category": "marble",
+        "img": "https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?q=80&w=500" 
+    }
+]

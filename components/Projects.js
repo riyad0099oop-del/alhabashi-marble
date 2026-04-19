@@ -2,10 +2,13 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "../i18n/routing";
 import { projectsData } from "../data/projectsData";
+import { useTranslations } from "next-intl";
 
 export default function Projects() {
+    const t = useTranslations("Projects");
+
     return (
         <section id="projects" className="projects-section-modern">
             <div className="container">
@@ -15,9 +18,9 @@ export default function Projects() {
                     viewport={{ once: true, margin: "-100px" }}
                     className="projects-header"
                 >
-                    <span className="accent-badge">معرض الإنجازات</span>
-                    <h2 className="section-title-modern">إبداعات صُنعت لتبقى</h2>
-                    <p className="projects-subtitle">نحن لا نبيع الرخام فحسب، بل نصنع تحفاً فنية تزين مسكنك وتدوم للأجيال.</p>
+                    <span className="accent-badge">{t("badge")}</span>
+                    <h2 className="section-title-modern">{t("title")}</h2>
+                    <p className="projects-subtitle">{t("subtitle")}</p>
                 </motion.div>
 
                 <div className="projects-bento-grid">
@@ -46,7 +49,7 @@ export default function Projects() {
                                     />
                                     <div className="project-mask"></div>
                                     <div className="project-info-overlay">
-                                        <span className="project-type-tag">{project.type}</span>
+                                        <span className="project-type-tag">{t(`filters.${project.type}`)}</span>
                                         <h3>{project.title}</h3>
                                     </div>
                                 </div>
@@ -62,8 +65,8 @@ export default function Projects() {
                     className="projects-action-center"
                 >
                     <Link href="/projects" className="btn-explore-luxury">
-                        <span>استكشف كافة مشروعاتنا</span>
-                        <i className="fas fa-arrow-left"></i>
+                        <span>{t("exploreMore")}</span>
+                        <i className={`fas ${t("filters.all") === "كل الإبداعات" ? "fa-arrow-left" : "fa-arrow-right"}`}></i>
                     </Link>
                 </motion.div>
             </div>

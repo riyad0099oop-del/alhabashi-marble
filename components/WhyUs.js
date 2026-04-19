@@ -1,9 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { features } from "../data/features";
+import { useTranslations } from "next-intl";
 
 export default function WhyUs() {
+    const t = useTranslations("Home.WhyUs");
+
+    const icons = ["fas fa-gem", "fas fa-microchip", "fas fa-medal"];
+
     return (
         <section id="why-us" className="why-us-premium">
             <motion.div 
@@ -12,16 +16,13 @@ export default function WhyUs() {
                 viewport={{ once: true, margin: "-100px" }}
                 className="why-us-header"
             >
-                <span className="badge-expert">الاحترافية في التفاصيل</span>
-                <h2 className="title-expert">لماذا يختارنا الخبراء؟</h2>
-                <p className="subtitle-expert">
-                    صياغة قصص الفخامة والجمال بأسلوب فني رفيع يجمع بين أصالة الحجر ودقة المعمار.
-                </p>
+                <span className="badge-expert">{t("badge")}</span>
+                <h2 className="title-expert">{t("title")}</h2>
+                <p className="subtitle-expert">{t("desc")}</p>
             </motion.div>
 
             <div className="editorial-features-grid">
-                {features.map((f, i) => {
-                    // Make the middle card slightly taller (center-card)
+                {[0, 1, 2].map((i) => {
                     const isCenter = i === 1;
                     return (
                         <motion.div 
@@ -32,9 +33,9 @@ export default function WhyUs() {
                             transition={{ duration: 0.8, delay: i * 0.15, ease: "easeOut" }}
                             className={`editorial-card ${isCenter ? 'center-card' : ''}`}
                         >
-                            <i className={`${f.icon} editorial-icon`}></i>
-                            <h3>{f.title}</h3>
-                            <p>{f.desc}</p>
+                            <i className={`${icons[i]} editorial-icon`}></i>
+                            <h3>{t(`cards.${i}.title`)}</h3>
+                            <p>{t(`cards.${i}.desc`)}</p>
                         </motion.div>
                     );
                 })}

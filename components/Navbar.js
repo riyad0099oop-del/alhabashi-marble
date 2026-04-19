@@ -3,13 +3,22 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { Link, usePathname } from "../i18n/routing";
+import { useTheme } from "next-themes";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+  
+  const t = useTranslations("Navbar");
+  const locale = useLocale();
+  const pathname = usePathname();
 
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
@@ -18,12 +27,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { title: "الرئيسية", id: "/#home" },
-    { title: "خدماتنا", id: "/services" },
-    { title: "صالة العرض", id: "/#showroom" },
-    { title: "مشاريعنا", id: "/projects" },
-    { title: "دليل العناية", id: "/care-guide" },
-    { title: "اتصل بنا", id: "/contact" },
+    { title: t("home"), id: "/#home" },
+    { title: t("services"), id: "/services" },
+    { title: t("showroom"), id: "/#showroom" },
+    { title: t("projects"), id: "/projects" },
+    { title: t("careGuide"), id: "/care-guide" },
+    { title: t("contact"), id: "/contact" },
   ];
 
   return (
@@ -38,7 +47,7 @@ export default function Navbar() {
             unoptimized
             className="brand-logo-img"
           />
-          <span className="brand-text">الحبشي للرخام والجرانيت</span>
+          <span className="brand-text">{t("brand")}</span>
         </Link>
         
         {/* Desktop Nav */}
@@ -55,6 +64,49 @@ export default function Navbar() {
         </nav>
 
         <div className="nav-actions">
+          {/* Language Switcher */}
+          {mounted && (
+            <Link
+              href={pathname || "/"}
+              locale={locale === "ar" ? "en" : "ar"}
+              className="lang-switch-btn"
+              style={{
+                background: "transparent",
+                border: "1px solid rgba(255,255,255,0.2)",
+                color: scrolled ? "var(--accent-gold)" : "white",
+                fontSize: "0.9rem",
+                fontWeight: "700",
+                cursor: "pointer",
+                marginRight: "15px",
+                padding: "4px 10px",
+                borderRadius: "20px",
+                textDecoration: "none",
+                transition: "all 0.3s"
+              }}
+            >
+              {t("lang")}
+            </Link>
+          )}
+
+          {/* Theme Toggle Button */}
+          {mounted && (
+            <button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              style={{
+                background: "transparent",
+                border: "none",
+                color: scrolled ? "var(--accent-gold)" : "white",
+                fontSize: "1.2rem",
+                cursor: "pointer",
+                marginRight: "15px",
+                transition: "color 0.3s"
+              }}
+              aria-label="Toggle Theme"
+            >
+              <i className={theme === "dark" ? "fas fa-sun" : "fas fa-moon"}></i>
+            </button>
+          )}
+
           {/* Hamburger Menu Toggle */}
           <button 
             className={`hamburger-premium ${menuOpen ? "open" : ""}`} 
@@ -67,7 +119,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Sidebar (Kept separate from pill structure for clarity) */}
+        {/* Mobile Sidebar */}
         <AnimatePresence>
           {menuOpen && (
             <>
@@ -93,7 +145,7 @@ export default function Navbar() {
                 }}
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '50px' }}>
-                  <Image src="https://i.ibb.co/vz6Gv2W/20260402_220302.jpg" alt="Logo" width={60} height={60} style={{ borderRadius: '50%' }} />
+                  <Image src="/images/logo.png" alt="Logo" width={60} height={60} style={{ borderRadius: '50%' }} />
                   <button onClick={() => setMenuOpen(false)} style={{ background: 'none', border: 'none', fontSize: '2.5rem', color: 'var(--primary-brown)', cursor: 'pointer' }}>&times;</button>
                 </div>
                 <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '25px', padding: 0 }}>

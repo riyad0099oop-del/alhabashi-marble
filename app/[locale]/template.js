@@ -9,9 +9,9 @@ export default function Template({ children }) {
             {/* The Curtain that covers the screen immediately on page load, then lifts */}
             <motion.div 
                 className="site-preloader-curtain"
-                initial={{ y: 0 }} // Starts fully hiding the screen
-                animate={{ y: "-100vh", borderRadius: "0 0 50% 50%" }} // Slides UP out of view
-                transition={{ duration: 1, ease: [0.76, 0, 0.24, 1], delay: 0.8 }} // Waits 0.8s then moves
+                initial={{ y: 0 }} 
+                animate={{ y: "-100vh", borderRadius: "0 0 50% 50%" }} 
+                transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1], delay: 0.2 }} 
             >
                 <div className="preloader-content-box">
                     <div className="preloader-logo">
@@ -33,9 +33,9 @@ export default function Template({ children }) {
 
             {/* The Page Content revealing subtly */}
             <motion.div
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1 }}
+                transition={{ duration: 0.4, delay: 0.3 }}
             >
                 {children}
             </motion.div>

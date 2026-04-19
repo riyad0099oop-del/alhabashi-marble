@@ -1,0 +1,450 @@
+[
+  {
+    "id": 2,
+    "title": "أرضيات الصالات الواسعة",
+    "category": "رخام أبيض ناصع مع إطارات هندسية من الرخام الداكن",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-2.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 3,
+    "title": "مداخل الرخام الأسود الأنيق",
+    "category": "تنسيق ممرات الصالات بتطعيمات طولية فاخرة",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-3.jpg",
+    "size": "large"
+  },
+  {
+    "id": 31,
+    "title": "ممرات القصور المنحنية",
+    "category": "أرضيات وجدران رخامية متناسقة بتصميم منحني فخم",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-4.jpg",
+    "size": "large"
+  },
+  {
+    "id": 32,
+    "title": "الصالات المفتوحة قيد الإنشاء",
+    "category": "تفصيل رخام مميز على شكل مربعات بمزيج من الأبيض والبني الداكن",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-5.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 33,
+    "title": "أطراف وزخارف السيراميك والرخام",
+    "category": "نقوش منحنية بارزة وفنية لأطراف الأرضيات",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-6.jpg",
+    "size": "small"
+  },
+  {
+    "id": 34,
+    "title": "ممرات الجرانيت المرقطة",
+    "category": "أرضيات مصممة بالجرانيت الأبيض والأسود للصالات الممتدة",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-7.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 35,
+    "title": "أرضيات القاعات ثلاثية الأبعاد",
+    "category": "إيحاء بمكعبات هندسية تزيد من فخامة الصالات الواسعة بفضل تداخل ألوان الرخام",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-8.jpg",
+    "size": "large"
+  },
+  {
+    "id": 351,
+    "title": "سجادة الرخام المزخرفة",
+    "category": "تصميم ووترجيت (Waterjet) فريد يحاكي فخامة السجاد في ممرات القصور",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-11.jpg",
+    "size": "large"
+  },
+  {
+    "id": 352,
+    "title": "لوحات الأرضية الهندسية",
+    "category": "دقة متناهية في قص وتركيب الرخام بأنماط نباتية كلاسيكية",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-12.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 353,
+    "title": "ميداليات الرخام الدائرية",
+    "category": "تصميم دائري متناسق يجمع بين ألوان الرخام الطبيعي الدافئة",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-13.jpg",
+    "size": "small"
+  },
+  {
+    "id": 354,
+    "title": "مجموعة النجم واليوناني",
+    "category": "ميدالية أرضية بنمط النجمة وحدود يونانية (Greek Key) لتضفي لمسة تاريخية",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-14.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 355,
+    "title": "زخارف الرخام الانسيابية",
+    "category": "تصامييم ووترجيت دائرية بأنماط منحنية ناعمة لمداخل الفلل",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-15.jpg",
+    "size": "large"
+  },
+  {
+    "id": 36,
+    "title": "أرضيات الصالات المزخرفة",
+    "category": "تفصيل يدوي دقيق للرخام في صالات الاستقبال الرئيسية",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-9.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 37,
+    "title": "تصميم ممرات الرخام الملكي",
+    "category": "تنسيق ممرات فرعية بألوان رخام متجانسة",
+    "type": "floors",
+    "image": "/images/projects/floors/floor-10.jpg",
+    "size": "small"
+  },
+  {
+    "id": 4,
+    "title": "الدرج الدائري الملكي",
+    "category": "تنفيذ وتجهيز السلالم الدائرية الفخمة",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-1.jpg",
+    "size": "large"
+  },
+  {
+    "id": 5,
+    "title": "سلالم الفيلا الخاصة",
+    "category": "أدراج بتفاصيل دقيقة للفلل والمنازل",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-2.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 6,
+    "title": "درج الجرانيت العصري",
+    "category": "صلابة وقوة الجرانيت بتطبيقات السلالم",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-3.jpg",
+    "size": "small"
+  },
+  {
+    "id": 61,
+    "title": "الدرابزين والمقابض",
+    "category": "تصميم وتنفيذ ملحقات السلالم الرخامية",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-4.jpg",
+    "size": "small"
+  },
+  {
+    "id": 62,
+    "title": "تفاصيل الرخام الطبيعي",
+    "category": "إبراز عروق الرخام في درجات السلالم",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-5.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 63,
+    "title": "الدرج المنحوت بالإضاءة",
+    "category": "درجات رخامية مضاءة من الأسفل لحماية وتجميل السلم",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-6.jpg",
+    "size": "large"
+  },
+  {
+    "id": 64,
+    "title": "سلم الجرانيت الداكن",
+    "category": "تركيب سلالم قوية بجرانيت داكن للقصور",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-7.jpg",
+    "size": "small"
+  },
+  {
+    "id": 65,
+    "title": "درج المداخل الخارجية",
+    "category": "جرانيت خارجي معالج لمقاومة الانزلاق",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-8.jpg",
+    "size": "large"
+  },
+  {
+    "id": 66,
+    "title": "الرخام البني الملكي",
+    "category": "سلالم داخلية أنيقة برخام بني (إمبرادور)",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-9.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 67,
+    "title": "درج المساحات الضيقة",
+    "category": "حلول هندسية للسلالم الملتفة بجرانيت متين",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-10.jpg",
+    "size": "small"
+  },
+  {
+    "id": 68,
+    "title": "درج الدرابزين الحديث",
+    "category": "سلالم الجرانيت الأسود مع درابزين ستانلس ستيل",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-11.jpg",
+    "size": "large"
+  },
+  {
+    "id": 69,
+    "title": "شياكة الرخام المفتوح",
+    "category": "سلالم داخلية برخام كرارة أبيض ناصع",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-12.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 70,
+    "title": "سلم القصور الكلاسيكي",
+    "category": "رخام البيج الملكي بلمسات النحاس",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-13.jpg",
+    "size": "large"
+  },
+  {
+    "id": 71,
+    "title": "الرخام والجرانيت المدمج",
+    "category": "تطعيم السلم برخام فاتح وتفاصيل جانبية",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-14.jpg",
+    "size": "small"
+  },
+  {
+    "id": 72,
+    "title": "سلم المداخل البارزة",
+    "category": "جرانيت مقاوم للعوامل الجوية للمداخل الرئيسية",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-15.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 73,
+    "title": "هندسة الأطراف الحادة",
+    "category": "دقة القص والتركيب في سلالم الجرانيت الأسود",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-16.jpg",
+    "size": "large"
+  },
+  {
+    "id": 74,
+    "title": "جمال الرخام المضاء",
+    "category": "تطعيم السلم بإضاءات جانبية بأسلوب كلاسيكي",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-17.jpg",
+    "size": "small"
+  },
+  {
+    "id": 75,
+    "title": "الرخام المطعم بالأحجار الملونة",
+    "category": "تصميم سلالم دمج هندسي فاخر",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-18.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 76,
+    "title": "الجرانيت الأسود مع الأبيض",
+    "category": "تصميم عصري يدمج الجرانيت الأسود مع القوائم البيضاء",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-19.jpg",
+    "size": "large"
+  },
+  {
+    "id": 77,
+    "title": "درج الرخام البيج الكلاسيكي",
+    "category": "درجات رخامية بتفاصيل كلاسيكية ناعمة",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-20.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 78,
+    "title": "الرخام المدمج البني والبيج",
+    "category": "درجات رخام بيج مع تطعيم على الأطراف باللون البني الفاخر",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-21.jpg",
+    "size": "small"
+  },
+  {
+    "id": 79,
+    "title": "الدرج الملكي المتباين",
+    "category": "تناسق رائع بين الأسود والأبيض في السلالم العريضة",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-22.jpg",
+    "size": "large"
+  },
+  {
+    "id": 80,
+    "title": "سلالم الرخام الفنية",
+    "category": "درجات رخامية مصقولة بعروق طبيعية بارزة",
+    "type": "stairs",
+    "image": "/images/projects/stairs/stair-23.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 7,
+    "title": "مطبخ الجرانيت الأسود الملكي",
+    "category": "طاولات مطبخ من الجرانيت بتطريزات ماسية بيضاء",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-1.jpg",
+    "size": "large"
+  },
+  {
+    "id": 8,
+    "title": "مغاسل الجرانيت الرمادي",
+    "category": "مغاسل متينة بتصميم عصري مقاوم للبقع",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-2.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 9,
+    "title": "جزر المطابخ المتكاملة",
+    "category": "تصميم جزر مطبخ بجرانيت رمادي وأرفف مدمجة",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-3.jpg",
+    "size": "small"
+  },
+  {
+    "id": 91,
+    "title": "مغاسل الصالات المودرن",
+    "category": "مغسلة رخامية دائرية مدمجة بإتقان",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-4.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 92,
+    "title": "مطابخ الرخام البني الفخم",
+    "category": "سطح عمل مطبخ برخام بني داكن لإضفاء لمسة دافئة",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-5.jpg",
+    "size": "large"
+  },
+  {
+    "id": 93,
+    "title": "مغاسل كلاسيكية مزخرفة",
+    "category": "تصميم فخم يدمج الرخام البني والبيج مع مرآة مؤطرة بإضاءة علوية",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-6.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 94,
+    "title": "مغاسل مودرن بيضاء",
+    "category": "رخام أبيض نقي بتصميم هندسي عصري للمساحات الراقية",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-7.jpg",
+    "size": "large"
+  },
+  {
+    "id": 95,
+    "title": "مغاسل سطحية ناعمة",
+    "category": "تصميم انسيابي بسيط ومريح برخام كريمي فاخر",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-8.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 96,
+    "title": "مغاسل الرخام الأسود بمارquina",
+    "category": "تصميم فريد لغسالتين مدمجتين في قطعة رخام سوداء بماربنا ذهبية",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-9.jpg",
+    "size": "large"
+  },
+  {
+    "id": 97,
+    "title": "مغاسل فندقية فاخرة",
+    "category": "مغاسل سوداء بتزيينات ذهبية مع إضاءة خلفية تبرز جمال الرخام",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-10.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 98,
+    "title": "مغاسل الرخام الكريمي الشلال",
+    "category": "تصميم غسالة مدمجة قطعة واحدة باللون الكريمي مع رف سفلي",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-11.jpg",
+    "size": "large"
+  },
+  {
+    "id": 99,
+    "title": "مغاسل رمادية بتصميم صناعي",
+    "category": "رخام رمادي معالج بتصميم هندسي بسيط وعصري",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-12.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 100,
+    "title": "منصة مغاسل الرخام الأبيض",
+    "category": "رخام أبيض واسع بفتحات مزدوجة جاهز للتركيب النهائي",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-13.jpg",
+    "size": "large"
+  },
+  {
+    "id": 101,
+    "title": "مغاسل عروق الذهب الطبيعية",
+    "category": "رخام فاخر بعروق ذهبية وبنية بارزة بتصميم مودرن دقيق",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-14.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 102,
+    "title": "مغاسل الجرانيت الداكن المرقط",
+    "category": "تصميم متقن لغسالة جرانيت داكنة تناسب الديكورات العصرية",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-15.jpg",
+    "size": "large"
+  },
+  {
+    "id": 103,
+    "title": "مغاسل التباين الملكي",
+    "category": "رخام أسود فاخر مع رفوف كريمية متباينة بتصميم فريد",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-16.jpg",
+    "size": "medium"
+  },
+  {
+    "id": 104,
+    "title": "مغاسل الحجر الأبيض الصافي",
+    "category": "تصميم بسيط وأنيق لغسالة سيراميك على سطح رخامي أبيض",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-17.jpg",
+    "size": "large"
+  },
+  {
+    "id": 105,
+    "title": "منصة المغاسل المزدوجة الحديثة",
+    "category": "رخام أبيض بتصميم عصري يضم مغسلتين غائرتين بإتقان",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-18.jpg",
+    "size": "large"
+  },
+  {
+    "id": 106,
+    "title": "مغاسل الرخام المزخرف",
+    "category": "مغسلة سيراميك فوق سطح رخامي أبيض وأسود بتصميم متدرج",
+    "type": "kitchens",
+    "image": "/images/projects/kitchens/kitchen-19.jpg",
+    "size": "medium"
+  }
+]

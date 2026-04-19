@@ -1,0 +1,181 @@
+/* =========================================
+   القائمة العلوية المميزة (Premium Navbar)
+   ========================================= */
+.premium-navbar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 20px 5%;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+}
+
+.premium-navbar {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 10px 0;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: auto;
+}
+
+/* Scrolled State: The Glass Pill */
+.premium-navbar-wrapper.scrolled {
+    padding: 15px 5%;
+}
+
+.premium-navbar-wrapper.scrolled .premium-navbar {
+    background: rgba(45, 27, 18, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(217, 164, 125, 0.2);
+    padding: 10px 30px;
+    border-radius: 100px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.brand-logo-img {
+    height: 55px;
+    width: auto;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.premium-navbar-wrapper.scrolled .brand-logo-img {
+    height: 45px;
+}
+
+.brand-text {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: white;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.premium-navbar-wrapper.scrolled .brand-text {
+    color: var(--accent-gold);
+    text-shadow: none;
+}
+
+/* Desktop Navigation */
+.desktop-menu {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-menu a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    font-size: 1.05rem;
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.premium-navbar-wrapper.scrolled .desktop-menu a {
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: none;
+}
+
+/* Golden Underline Hover Effect */
+.desktop-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background: var(--accent-gold);
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 2px;
+}
+
+.desktop-menu a:hover {
+    color: var(--accent-gold);
+}
+
+.premium-navbar-wrapper.scrolled .desktop-menu a:hover {
+    color: white;
+}
+
+.desktop-menu a:hover::after {
+    width: 100%;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-nav-quote {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(5px);
+}
+
+.btn-nav-quote:hover {
+    background: var(--white);
+    color: var(--primary-brown);
+    border-color: white;
+}
+
+/* Hamburger & Mobile — Raised breakpoint to 1100px */
+.hamburger-premium {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.hamburger-premium span {
+    width: 100%;
+    height: 2px;
+    background: var(--white);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.premium-navbar-wrapper.scrolled .hamburger-premium span {
+    background: var(--accent-gold);
+}
+
+/* FIX #11 — Raised from 992px to 1100px */
+@media (max-width: 1100px) {
+    .premium-navbar-wrapper { padding: 15px 5%; }
+    .desktop-menu { display: none; }
+    .btn-nav-quote { display: none; }
+    .hamburger-premium { display: flex; }
+}
