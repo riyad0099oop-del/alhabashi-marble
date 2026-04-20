@@ -488,6 +488,70 @@ export default function ContactPage() {
         .gold-text { color: #bf953f; font-weight: 700; }
 
         /* Info Pill V2 */
+        .luxury-info-pill {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          background: var(--white);
+          backdrop-filter: blur(20px);
+          border: 2.5px solid var(--accent-gold);
+          border-radius: 100px;
+          padding: 30px 60px;
+          box-shadow: 0 30px 70px rgba(78, 46, 30, 0.12);
+          max-width: 900px;
+          margin: 0 auto;
+          transition: all 0.5s ease;
+        }
+
+        .luxury-info-pill:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 30px 70px rgba(217, 164, 125, 0.15);
+          border-color: var(--accent-gold);
+        }
+
+        .pill-divider {
+          width: 2px;
+          height: 60px;
+          background: var(--accent-gold);
+          opacity: 0.4;
+        }
+
+        .pill-item {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          text-align: right;
+        }
+
+        .pill-icon {
+          font-size: 2rem;
+          color: var(--accent-gold);
+          background: rgba(217, 164, 125, 0.1);
+          width: 65px;
+          height: 65px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          transition: 0.3s;
+        }
+
+        .pill-text { display: flex; flex-direction: column; }
+
+        .pill-label {
+          font-size: 0.85rem;
+          color: var(--text-muted);
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 700;
+        }
+
+        .pill-value {
+          font-size: 1.25rem;
+          color: var(--primary-brown);
+          font-weight: 800;
+        }
+
         .luxury-info-pill-v2 {
           display: flex;
           align-items: center;

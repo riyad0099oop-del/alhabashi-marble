@@ -616,10 +616,10 @@
     justify-content: space-around;
     background: var(--white);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(217, 164, 125, 0.3);
+    border: 2.5px solid var(--accent-gold);
     border-radius: 100px;
     padding: 30px 60px;
-    box-shadow: 0 20px 50px rgba(78, 46, 30, 0.08);
+    box-shadow: 0 30px 70px rgba(78, 46, 30, 0.12);
     max-width: 900px;
     margin: 0 auto;
     transition: all 0.5s ease;

@@ -16,7 +16,7 @@
 /* القسم الحديث المتطور في الصفحة الرئيسية */
 .projects-section-modern {
     padding: 120px 8%;
-    background: linear-gradient(180deg, #fdfaf5 0%, var(--white) 100%);
+    background: linear-gradient(180deg, var(--bg-light) 0%, var(--white) 100%);
     position: relative;
     overflow: hidden;
 }
@@ -56,6 +56,25 @@
     margin-top: 20px;
     line-height: 1.8;
     font-weight: 500;
+}
+
+/* Dark Mode Overrides for Projects Section */
+.dark .projects-section-modern {
+    background: linear-gradient(180deg, #110c0a 0%, #080504 100%);
+}
+
+.dark .section-title-modern {
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.dark .projects-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.dark .accent-badge {
+    background: #2d1b12; /* Keep it dark even in dark mode for gold text to pop */
+    border: 1px solid var(--accent-gold);
 }
 
 .projects-bento-grid {
