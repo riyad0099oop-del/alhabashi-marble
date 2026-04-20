@@ -64,29 +64,27 @@ export async function generateMetadata({ params }) {
       },
     },
     openGraph: {
-      title: isAr
-        ? "الحبشي للرخام والجرانيت | فخامة الحجر العالمي"
-        : "Al Habashi Marble & Granite | World-Class Stone Luxury",
+      title: "الحبشي للرخام والجرانيت | Al Habashi Marble & Granite",
       description: isAr
         ? "استيراد وتجهيز أرقى أنواع الرخام والجرانيت في اليمن بأحدث التقنيات العالمية."
-        : "Importing and processing the world's finest marble and granite in Yemen with cutting-edge technology.",
+        : "الحبشي للرخام والجرانيت: استيراد وتجهيز أرقى أنواع الرخام والجرانيت العالمي في اليمن.",
       url: "https://alhabashi-marble.vercel.app",
       images: [{
-        url: "/images/projects/floors/floor-3.jpg",
+        url: "/images/logo.png",
         width: 1200,
         height: 630,
-        alt: isAr ? "الحبشي للرخام والجرانيت — أرضيات رخامية فاخرة" : "Al Habashi Marble & Granite — Luxury Marble Floors",
+        alt: isAr ? "شعار الحبشي للرخام والجرانيت" : "Al Habashi Marble & Granite Logo",
       }],
       type: "website",
       locale: isAr ? "ar_YE" : "en_US",
     },
     twitter: {
       card: "summary_large_image",
-      title: isAr ? "الحبشي للرخام والجرانيت" : "Al Habashi Marble & Granite",
+      title: "الحبشي للرخام والجرانيت | Al Habashi Marble & Granite",
       description: isAr
         ? "فخامة الحجر العالمي في قلب اليمن. رخام إيطالي وتركي وجرانيت برازيلي."
         : "World-class stone luxury in the heart of Yemen. Italian, Turkish marble and Brazilian granite.",
-      images: ["/images/projects/floors/floor-3.jpg"],
+      images: ["/images/logo.png"],
     },
     icons: {
       icon: "/icon.png",
